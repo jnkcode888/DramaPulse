@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DramaPulse - Bet on Kenyan Drama!</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DramaPulse</h1>
+        <p class="tagline">Shika Points za KSh na Bet on Drama Iko Moto!</p>
+
+        <!-- Player Info -->
+        <div id="player-info">
+            <span>You have <span id="pulse-points">300</span> Points = KSh <span id="ksh-balance">300</span></span>
+            <button id="buy-points">Buy More Points</button>
+        </div>
+
+        <!-- Current Drama -->
+        <div id="drama-seed">
+            <h2>Current Drama: <span id="drama-title">Loading...</span></h2>
+            <p id="drama-status">Drama iko moto...</p>
+            <div class="drama-meter">
+                <div id="meter-fill"></div>
+            </div>
+        </div>
+
+        <!-- Betting Form -->
+        <form id="bet-form">
+            <h3>Place Your Bet</h3>
+            <select id="bet-option">
+                <option value="yes">Yes (e.g., Arrests? Viral?)</option>
+                <option value="no">No</option>
+            </select>
+            <input type="number" id="bet-amount" min="10" max="1000" placeholder="Points (e.g., 50)">
+            <button type="submit">Bet Now!</button>
+        </form>
+
+        <!-- Influence Feature -->
+        <div id="stir-pot">
+            <button id="stir-btn">Stir the Pot (50 Points)</button>
+            <button id="boost-btn">Stir Boost (KSh 50)</button>
+            <p id="stir-result"></p>
+        </div>
+
+        <!-- Timer -->
+        <div id="timer">Time Left: <span id="countdown">10:00</span></div>
+
+        <!-- Leaderboard -->
+        <div id="leaderboard">
+            <h3>Top Instigators</h3>
+            <ul id="leaderboard-list"></ul>
+        </div>
+
+        <!-- Monetization -->
+        <div id="monetization">
+            <h3>Get More Action</h3>
+            <button class="buy-btn" data-points="100" data-ksh="100">KSh 100 = 100 Points</button>
+            <button class="buy-btn" data-points="600" data-ksh="500">KSh 500 = 600 Points</button>
+            <button class="buy-btn" data-points="2500" data-ksh="2000">KSh 2,000 = 2,500 Points</button>
+            <button id="vip-btn">VIP (KSh 500/month)</button>
+        </div>
+
+        <!-- Ad Placeholder -->
+        <div class="ad">Ad loading...</div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
